@@ -1,5 +1,6 @@
 package UCPChat;
 
+//imports från java bibliotek
 import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.InetAddress;
@@ -7,6 +8,7 @@ import java.net.MulticastSocket;
 
 public class ChatListener extends Thread
 {
+    //Multicast egenskaper(använder port 8801 och ip-adressen)
     private int port = 8801;
     private InetAddress iadr = InetAddress.getByName("239.255.255.255");
     MulticastSocket socket;
